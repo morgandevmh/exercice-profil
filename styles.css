@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+   box-sizing: border-box;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-color: darkgrey;
+}
+
+:root {
+  --color-primary: #1a5f3d;
+  --color-text: #333;
+  --color-light: #666;
+}
+
+#card {
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 180px 1fr;
+  gap: 16px;
+  padding: 20px;
+}
+
+#photo img{
+ border-radius: 50%;
+ width: 150px;
+ height: 150px;
+ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.658);
+ margin-left: 20px;
+ margin-top: 15px;
+ 
+}
+
+#identity {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+
+#identity h1 {
+  color: var(--color-primary);
+  font-size: 2em;
+  font-weight: 700;
+}
+
+#identity h2 {
+  color: var(--color-text);
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+#identity h2:first-of-type {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+
+#button {
+  display: flex;
+  align-items: center;
+  grid-column: 1;
+
+}
+#button input {
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1em;
+  padding: 15px 30px;
+
+}
+
+#button input:hover {
+  transform: translateY(-4px);
+
+}
+
+#description {
+  padding-top: 25px;
+  margin-bottom: 30px;
+}
+
+#description h2 {
+  color: var(--color-primary);
+  font-size: 1.3em;
+  font-weight: 700px;
+  margin-bottom: 15px;
+}
+
+
+
+
