@@ -12,21 +12,13 @@ profil.html  et ses styles associés dans  style.css . La page doit afficher une
 - Un bouton « Contactez-moi » (non fonctionnel)
 
 ## Consignes HTML
-- Utiliser les balises de structure :
-
-
-  <!DOCTYPE html> ,  <html> ,  <head> ,  <body> 
+- Utiliser les balises de structure : ``<!DOCTYPE html> ,  <html> ,  <head> ,  <body>``
 
   
-- Structurer la carte avec des balises :
-
- 
- <div> ,  <img> ,  <h1> ,  <h2> ,  <p> ,  <button> 
+- Structurer la carte avec des balises : ``<div> ,  <img> ,  <h1> ,  <h2> ,  <p> ,  <button>`` 
 
    
-- Relier la feuille de style  style.css  avec
-
- <link> 
+- Relier la feuille de style  style.css  avec ``<link>`` 
 
 
 
