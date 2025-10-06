@@ -10,32 +10,38 @@ body {
    justify-content: center;
    align-items: center;
    min-height: 100vh;
-   background-color: darkgrey;
+   background-color: rgb(74, 74, 74);
 }
 
 :root {
   --color-primary: #1a5f3d;
   --color-text: #333;
-  --color-light: #666;
+  --color-text2:rgb(57, 57, 57);
+
 }
 
 #card {
-  background-color: white;
+  background-image: linear-gradient(135deg, rgba(186, 186, 186, 0.03) 0%, rgba(186, 186, 186, 0.03) 10%,rgba(133, 133, 133, 0.03) 10%, rgba(133, 133, 133, 0.03) 14%,rgba(38, 38, 38, 0.03) 14%, rgba(38, 38, 38, 0.03) 17%,rgba(93, 93, 93, 0.03) 17%, rgba(93, 93, 93, 0.03) 25%,rgba(80, 80, 80, 0.03) 25%, rgba(80, 80, 80, 0.03) 45%,rgba(239, 239, 239, 0.03) 45%, rgba(239, 239, 239, 0.03) 100%),linear-gradient(135deg, rgba(236, 236, 236, 0.03) 0%, rgba(236, 236, 236, 0.03) 47%,rgba(182, 182, 182, 0.03) 47%, rgba(182, 182, 182, 0.03) 63%,rgba(223, 223, 223, 0.03) 63%, rgba(223, 223, 223, 0.03) 81%,rgba(86, 86, 86, 0.03) 81%, rgba(86, 86, 86, 0.03) 89%,rgba(23, 23, 23, 0.03) 89%, rgba(23, 23, 23, 0.03) 90%,rgba(226, 226, 226, 0.03) 90%, rgba(226, 226, 226, 0.03) 100%),linear-gradient(45deg, rgba(52, 52, 52, 0.03) 0%, rgba(52, 52, 52, 0.03) 31%,rgba(246, 246, 246, 0.03) 31%, rgba(246, 246, 246, 0.03) 63%,rgba(188, 188, 188, 0.03) 63%, rgba(188, 188, 188, 0.03) 71%,rgba(15, 15, 15, 0.03) 71%, rgba(15, 15, 15, 0.03) 87%,rgba(127, 127, 127, 0.03) 87%, rgba(127, 127, 127, 0.03) 93%,rgba(234, 234, 234, 0.03) 93%, rgba(234, 234, 234, 0.03) 100%),linear-gradient(90deg, #ffffff,#ffffff);
   border-radius: 20px;
   width: 100%;
   max-width: 800px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   grid-template-rows: 180px 1fr;
   gap: 16px;
   padding: 20px;
+  transition: all(1.5 ease);
+}
+
+#card:hover {
+  transform: scale(1.2);
 }
 
 #photo img{
  border-radius: 50%;
  width: 150px;
  height: 150px;
- box-shadow: 0 4px 15px rgba(0, 0, 0, 0.658);
+ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
  margin-left: 20px;
  margin-top: 15px;
  
@@ -44,20 +50,25 @@ body {
 #identity {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
   justify-content: center;
 }
 
 #identity h1 {
   color: var(--color-primary);
-  font-size: 2em;
+  font-size: 3.8em;
   font-weight: 700;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 #identity h2 {
   color: var(--color-text);
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: 400;
+}
+
+#identity p {
+  font-size: 0.8em;
 }
 
 #identity h2:first-of-type {
@@ -79,26 +90,33 @@ body {
   font-weight: 700;
   font-size: 1em;
   padding: 15px 30px;
+  border: none;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);;
+
 
 }
 
 #button input:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
+  
 
 }
 
 #description {
-  padding-top: 25px;
   margin-bottom: 30px;
 }
 
 #description h2 {
   color: var(--color-primary);
-  font-size: 1.3em;
+  text-decoration: underline;
+  font-size: 1.6em;
   font-weight: 700px;
   margin-bottom: 15px;
 }
 
+#description p {
+  color: var(--color-text2)
+}
 
 
 
