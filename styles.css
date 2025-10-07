@@ -44,6 +44,7 @@ body {
  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
  margin-left: 20px;
  margin-top: 15px;
+object-fit: cover;
  
 }
 
@@ -91,7 +92,8 @@ body {
   font-size: 1em;
   padding: 15px 30px;
   border: none;
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+
 
 
 }
